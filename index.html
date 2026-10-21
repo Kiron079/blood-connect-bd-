@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Connect BD</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#fff5f5;color:#222;text-align:center}header{background:#c62828;color:white;padding:24px 12px}h1{margin:0}main{padding:24px 16px}.card{background:white;padding:20px;border-radius:12px;max-width:420px;margin:20px auto;box-shadow:0 2px 10px #ddd}input,select,button{box-sizing:border-box;width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc;font-size:16px}button{background:#c62828;color:white;border:0;font-weight:bold}footer{padding:20px;color:#666}
+</style>
+</head>
+<body>
+<header><h1>🩸 Blood Connect BD</h1><p>রক্ত দিন, জীবন বাঁচান</p></header>
+<main><h2>রক্তদাতা খুঁজুন</h2><div class="card"><label for="group">রক্তের গ্রুপ নির্বাচন করুন</label><select id="group"><option value="">রক্তের গ্রুপ বাছুন</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select><input id="area" placeholder="আপনার জেলা বা এলাকার নাম"><button onclick="searchDonor()">রক্তদাতা খুঁজুন</button><p id="message">রক্তদাতার তথ্য যোগ করার ব্যবস্থা পরবর্তী ধাপে তৈরি হবে।</p></div><div class="card"><h3>আপনি কি রক্তদাতা?</h3><p>শিগগিরই এখানে রক্তদাতা হিসেবে নিবন্ধনের ব্যবস্থা যোগ করা হবে।</p></div></main>
+<footer>Blood Connect BD © 2026</footer>
+<script>function searchDonor(){document.getElementById("message").textContent="নির্বাচিত গ্রুপ: "+(document.getElementById("group").value||"নির্বাচন করা হয়নি")+"। এলাকা: "+(document.getElementById("area").value||"দেওয়া হয়নি")+"। এখনো কোনো নিবন্ধিত দাতার ডেটাবেস যুক্ত নেই।"}</script>
+</body>
+</html>
